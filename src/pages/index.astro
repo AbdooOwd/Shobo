@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Item from '../components/Item.astro';
 ---
 
 <Layout title="Shobo - Abdoo's E-Shop">
@@ -10,15 +11,40 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<div class="stuff">
-			
+			<h1>What's that?</h1>
+			<p>It's a site that doesn't really sell stuff, but it might in the future (not sure)</p>
 		</div>
+
+		<li class="items">
+			<Item title='A Cool Bike' img_url='/img/bag.svg' href='/no' />
+		</li>
 
 	</main>
 </Layout>
 
 <style>
-	.le-intro {
-		padding: 50px 100px;
-		font-size: 22px;
+  
+	main {
+		padding: 20px 10px;
 	}
-</style>
+
+	.le-intro {
+		padding-top: 6vw;
+		text-align: center;
+	  	font-size: 22px;
+	}
+  
+	.stuff {
+		border-radius: 10px;
+		padding: 15px 1vw;
+		color: #fdfdfd;
+		background-color: #357960;
+		width: 90%;
+	}
+
+	.items {
+		padding: 20px 0px;
+		list-style: none;
+	}
+
+  </style>
